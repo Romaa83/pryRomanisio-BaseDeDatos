@@ -26,9 +26,9 @@ namespace pryRomanisio_BaseDeDatos
                 conexionRegistroEntrenadores.Open();
                 ComandoBD.Connection = conexionRegistroEntrenadores;
                 ComandoBD.CommandText = "INSERT INTO ENTRENADORES ([CODIGO DEPORTISTA], NOMBRE, APELLIDO, DIRECCION, PROVINCIA, DEPORTE)" +
-                "VALUES ('" + "CARLD" + "', '" + txtNombre.Text + "', '" + txtApellido.Text + "', '" + txtDireccion.Text + "', '" + txtProvincia.Text + "', '" + txtDeporte.Text + "')";
+                "VALUES ('" + "CARLD" + "' ,'" + txtNombre.Text + "', '" + txtApellido.Text + "', '" + txtDireccion.Text + "', '" + txtProvincia.Text + "', '" + txtDeporte.Text + "')";
                 ComandoBD.ExecuteNonQuery();
-                conexionRegistroEntrenadores.Close();
+                conexionRegistroEntrenadores.Close(); 
         }
     }
 }

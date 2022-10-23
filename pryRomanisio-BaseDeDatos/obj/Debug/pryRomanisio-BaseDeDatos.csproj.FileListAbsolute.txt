@@ -1,0 +1,15 @@
+D:\pryRomanisio-BaseDeDatos\pryRomanisio-BaseDeDatos\bin\Debug\pryRomanisio-BaseDeDatos.exe.config
+D:\pryRomanisio-BaseDeDatos\pryRomanisio-BaseDeDatos\bin\Debug\pryRomanisio-BaseDeDatos.exe
+D:\pryRomanisio-BaseDeDatos\pryRomanisio-BaseDeDatos\bin\Debug\pryRomanisio-BaseDeDatos.pdb
+D:\pryRomanisio-BaseDeDatos\pryRomanisio-BaseDeDatos\obj\Debug\pryRomanisio-BaseDeDatos.csproj.AssemblyReference.cache
+D:\pryRomanisio-BaseDeDatos\pryRomanisio-BaseDeDatos\obj\Debug\pryRomanisio-BaseDeDatos.csproj.SuggestedBindingRedirects.cache
+D:\pryRomanisio-BaseDeDatos\pryRomanisio-BaseDeDatos\obj\Debug\pryRomanisio_BaseDeDatos.frmConsultaDeportistas.resources
+D:\pryRomanisio-BaseDeDatos\pryRomanisio-BaseDeDatos\obj\Debug\pryRomanisio_BaseDeDatos.frmConsultaEntrenadores.resources
+D:\pryRomanisio-BaseDeDatos\pryRomanisio-BaseDeDatos\obj\Debug\pryRomanisio_BaseDeDatos.frmMenu.resources
+D:\pryRomanisio-BaseDeDatos\pryRomanisio-BaseDeDatos\obj\Debug\pryRomanisio_BaseDeDatos.Properties.Resources.resources
+D:\pryRomanisio-BaseDeDatos\pryRomanisio-BaseDeDatos\obj\Debug\pryRomanisio-BaseDeDatos.csproj.GenerateResource.cache
+D:\pryRomanisio-BaseDeDatos\pryRomanisio-BaseDeDatos\obj\Debug\pryRomanisio-BaseDeDatos.csproj.CoreCompileInputs.cache
+D:\pryRomanisio-BaseDeDatos\pryRomanisio-BaseDeDatos\obj\Debug\pryRomanisio-BaseDeDatos.exe
+D:\pryRomanisio-BaseDeDatos\pryRomanisio-BaseDeDatos\obj\Debug\pryRomanisio-BaseDeDatos.pdb
+D:\pryRomanisio-BaseDeDatos\pryRomanisio-BaseDeDatos\obj\Debug\pryRomanisio_BaseDeDatos.frmRegistroDeEntrenadores.resources
+D:\pryRomanisio-BaseDeDatos\pryRomanisio-BaseDeDatos\obj\Debug\pryRomanisio_BaseDeDatos.frmRegistroDeportistas.resources

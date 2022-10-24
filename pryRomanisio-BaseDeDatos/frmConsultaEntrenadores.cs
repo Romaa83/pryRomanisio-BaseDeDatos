@@ -39,7 +39,7 @@ namespace pryRomanisio_BaseDeDatos
                 LectorBase = QueQuieroDeLaBase.ExecuteReader();
                 while (LectorBase.Read())
                 {
-                    dgvEntrenadores.Rows.Add(LectorBase["CODIGO DEPORTISTA"].ToString(), LectorBase["NOMBRE"].ToString(),
+                    dgvEntrenadores.Rows.Add(LectorBase["CODIGO ENTRENADORES"].ToString(), LectorBase["NOMBRE"].ToString(),
                         LectorBase["APELLIDO"].ToString(), LectorBase["DIRECCION"].ToString(),
                         LectorBase["PROVINCIA"].ToString(),LectorBase["DEPORTE"].ToString());
                 }

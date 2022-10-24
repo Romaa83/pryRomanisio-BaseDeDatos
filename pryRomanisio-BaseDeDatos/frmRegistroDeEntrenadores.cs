@@ -25,10 +25,18 @@ namespace pryRomanisio_BaseDeDatos
         {
                 conexionRegistroEntrenadores.Open();
                 ComandoBD.Connection = conexionRegistroEntrenadores;
-                ComandoBD.CommandText = "INSERT INTO ENTRENADORES ([CODIGO DEPORTISTA], NOMBRE, APELLIDO, DIRECCION, PROVINCIA, DEPORTE)" +
-                "VALUES ('" + "CARLD" + "' ,'" + txtNombre.Text + "', '" + txtApellido.Text + "', '" + txtDireccion.Text + "', '" + txtProvincia.Text + "', '" + txtDeporte.Text + "')";
-                ComandoBD.ExecuteNonQuery();
+
+            ComandoBD.CommandText = "INSERT INTO ENTRENADORES ([CODIGO ENTRENADORES], [NOMBRE], APELLIDO, DIRECCION, PROVINCIA, DEPORTE)" +
+            "VALUES (" + Convert.ToInt32(txtCodDeportista.Text) + ",'" + txtNombre.Text + "', '" + txtApellido.Text + "', '" + txtDireccion.Text + "', '" + txtProvincia.Text + "', '" + txtDeporte.Text + "')";
+            //ComandoBD.CommandText = "INSERT INTO ENTRENADORES ([CODIGO DEPORTISTA], NOMBRE, APELLIDO, DIRECCION, PROVINCIA, DEPORTE)" +
+            //"VALUES ('" + txtCodDeportista.Text + "' ,'" + txtNombre.Text + "', '" + txtApellido.Text + "', '" + txtDireccion.Text + "', '" + txtProvincia.Text + "', '" + txtDeporte.Text + "')";
+            ComandoBD.ExecuteNonQuery();
                 conexionRegistroEntrenadores.Close(); 
+        }
+
+        private void frmRegistroDeEntrenadores_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

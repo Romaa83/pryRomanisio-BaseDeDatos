@@ -195,6 +195,7 @@
             this.Controls.Add(this.lblCodDeportistas);
             this.Name = "frmRegistroDeEntrenadores";
             this.Text = "Registro de Entrenadores";
+            this.Load += new System.EventHandler(this.frmRegistroDeEntrenadores_Load);
             this.SSEstado.ResumeLayout(false);
             this.SSEstado.PerformLayout();
             this.ResumeLayout(false);

@@ -39,6 +39,7 @@
             this.Provicia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Deporte = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnConsultarEntrenadores = new System.Windows.Forms.Button();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.SSEstado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEntrenadores)).BeginInit();
             this.SuspendLayout();
@@ -46,7 +47,8 @@
             // SSEstado
             // 
             this.SSEstado.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
+            this.toolStripStatusLabel1,
+            this.toolStripStatusLabel2});
             this.SSEstado.Location = new System.Drawing.Point(0, 423);
             this.SSEstado.Name = "SSEstado";
             this.SSEstado.Size = new System.Drawing.Size(717, 22);
@@ -123,6 +125,11 @@
             this.btnConsultarEntrenadores.UseVisualStyleBackColor = true;
             this.btnConsultarEntrenadores.Click += new System.EventHandler(this.btnConsultarEntrenadores_Click);
             // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(0, 17);
+            // 
             // frmConsultaEntrenadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -134,6 +141,7 @@
             this.Controls.Add(this.dgvEntrenadores);
             this.Name = "frmConsultaEntrenadores";
             this.Text = "Consulta Entrenadores";
+            this.Load += new System.EventHandler(this.frmConsultaEntrenadores_Load);
             this.SSEstado.ResumeLayout(false);
             this.SSEstado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEntrenadores)).EndInit();
@@ -155,5 +163,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Provicia;
         private System.Windows.Forms.DataGridViewTextBoxColumn Deporte;
         private System.Windows.Forms.Button btnConsultarEntrenadores;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
     }
 }

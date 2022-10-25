@@ -23,20 +23,40 @@ namespace pryRomanisio_BaseDeDatos
 
         private void btnCargar_Click(object sender, EventArgs e)
         {
+            try
+            {
                 conexionRegistroEntrenadores.Open();
                 ComandoBD.Connection = conexionRegistroEntrenadores;
 
-            ComandoBD.CommandText = "INSERT INTO ENTRENADORES ([CODIGO ENTRENADORES], [NOMBRE], APELLIDO, DIRECCION, PROVINCIA, DEPORTE)" +
-            "VALUES (" + Convert.ToInt32(txtCodDeportista.Text) + ",'" + txtNombre.Text + "', '" + txtApellido.Text + "', '" + txtDireccion.Text + "', '" + txtProvincia.Text + "', '" + txtDeporte.Text + "')";
-            //ComandoBD.CommandText = "INSERT INTO ENTRENADORES ([CODIGO DEPORTISTA], NOMBRE, APELLIDO, DIRECCION, PROVINCIA, DEPORTE)" +
-            //"VALUES ('" + txtCodDeportista.Text + "' ,'" + txtNombre.Text + "', '" + txtApellido.Text + "', '" + txtDireccion.Text + "', '" + txtProvincia.Text + "', '" + txtDeporte.Text + "')";
-            ComandoBD.ExecuteNonQuery();
-                conexionRegistroEntrenadores.Close(); 
+                ComandoBD.CommandText = "INSERT INTO ENTRENADORES ([CODIGO ENTRENADORES], [NOMBRE], APELLIDO, DIRECCION, PROVINCIA, DEPORTE)" +
+                "VALUES ('" + txtCodDeportista.Text + "','" + txtNombre.Text + "', '" + txtApellido.Text + "', '" + txtDireccion.Text + "', '" + txtProvincia.Text + "', '" + cboDeporte.Text + "')";
+                ComandoBD.ExecuteNonQuery();
+                conexionRegistroEntrenadores.Close();
+                MessageBox.Show("Datos cargados con exito");
+            }
+            catch (Exception mensajito)
+            {
+                MessageBox.Show(mensajito.Message);
+                throw;
+            }
         }
 
         private void frmRegistroDeEntrenadores_Load(object sender, EventArgs e)
         {
+            try
+            {
+                conexionRegistroEntrenadores = new OleDbConnection("Provider = Microsoft.ACE.OLEDB.12.0; Data Source = DEPORTE.accdb");
+                conexionRegistroEntrenadores.Open();
+                SSEstado.BackColor = Color.Green;
+                toolStripStatusLabel2.Text = "Conectado a la base de datos" + " " + DateTime.Now;
+            }
+            catch (Exception mensajito)
+            {
+                toolStripStatusLabel1.Text = mensajito.Message;
+                SSEstado.BackColor = Color.DarkRed;
 
+            }
+            conexionRegistroEntrenadores.Close();
         }
     }
 }

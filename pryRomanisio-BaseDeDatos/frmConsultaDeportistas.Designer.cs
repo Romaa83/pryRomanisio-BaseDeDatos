@@ -40,6 +40,7 @@
             this.btnConsultarDeportista = new System.Windows.Forms.Button();
             this.SSEstado = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDeportistas)).BeginInit();
             this.SSEstado.SuspendLayout();
             this.SuspendLayout();
@@ -119,7 +120,8 @@
             // SSEstado
             // 
             this.SSEstado.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
+            this.toolStripStatusLabel1,
+            this.toolStripStatusLabel2});
             this.SSEstado.Location = new System.Drawing.Point(0, 436);
             this.SSEstado.Name = "SSEstado";
             this.SSEstado.Size = new System.Drawing.Size(818, 22);
@@ -130,6 +132,12 @@
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(0, 17);
+            this.toolStripStatusLabel2.Click += new System.EventHandler(this.toolStripStatusLabel2_Click);
             // 
             // frmConsultaDeportistas
             // 
@@ -142,6 +150,7 @@
             this.Controls.Add(this.dgvDeportistas);
             this.Name = "frmConsultaDeportistas";
             this.Text = "Consulta Deportistas";
+            this.Load += new System.EventHandler(this.frmConsultaDeportistas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDeportistas)).EndInit();
             this.SSEstado.ResumeLayout(false);
             this.SSEstado.PerformLayout();
@@ -164,5 +173,6 @@
         private System.Windows.Forms.Button btnConsultarDeportista;
         private System.Windows.Forms.StatusStrip SSEstado;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
     }
 }

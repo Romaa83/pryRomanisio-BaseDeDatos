@@ -59,5 +59,28 @@ namespace pryRomanisio_BaseDeDatos
             }
 
         }
+
+        private void frmConsultaDeportistas_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                ConexionBase = new OleDbConnection("Provider = Microsoft.ACE.OLEDB.12.0; Data Source = DEPORTE.accdb");
+                ConexionBase.Open();
+                SSEstado.BackColor = Color.Green;
+                toolStripStatusLabel1.Text = "Conectado a la base de datos" + " " + DateTime.Now;
+            }
+            catch (Exception mensajito)
+            {
+                toolStripStatusLabel1.Text = mensajito.Message;
+                SSEstado.BackColor = Color.DarkRed;
+
+            }
+            ConexionBase.Close();
+        }
+
+        private void toolStripStatusLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -63,5 +63,17 @@ namespace pryRomanisio_BaseDeDatos
             frmRegistroDeportistas frmRegistroDeportistas = new frmRegistroDeportistas();
             frmRegistroDeportistas.ShowDialog();
         }
+
+        private void entrenadoresToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            frmActualizarEntrenadores frmActualizarEntrenadores = new frmActualizarEntrenadores();
+            frmActualizarEntrenadores.ShowDialog();
+        }
+
+        private void deportistaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmActualizarDeportista frmActualizarDeportista = new frmActualizarDeportista();
+            frmActualizarDeportista.ShowDialog();
+        }
     }
 }

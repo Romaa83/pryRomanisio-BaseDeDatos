@@ -42,8 +42,8 @@
             this.btnCargar = new System.Windows.Forms.Button();
             this.SSEstado = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.cboDeporte = new System.Windows.Forms.ComboBox();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.cboDeporte = new System.Windows.Forms.ComboBox();
             this.SSEstado.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -169,6 +169,11 @@
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
             // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(0, 17);
+            // 
             // cboDeporte
             // 
             this.cboDeporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -182,12 +187,6 @@
             this.cboDeporte.Name = "cboDeporte";
             this.cboDeporte.Size = new System.Drawing.Size(121, 21);
             this.cboDeporte.TabIndex = 14;
-            // 
-            // toolStripStatusLabel2
-            // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(118, 17);
-            this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
             // 
             // frmRegistroDeEntrenadores
             // 

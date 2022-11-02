@@ -23,7 +23,7 @@ namespace pryRomanisio_BaseDeDatos
 
         private void frmActualizarEntrenadores_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -63,30 +63,37 @@ namespace pryRomanisio_BaseDeDatos
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            string nombre = txtNombre.Text;
-            string apellido = txtApellido.Text;
-            string direccion = txtDireccion.Text;
-            string provincia = txtProvincia.Text;
-            string deporte = cboDeporte.Text;
-            string codigodeportista = txtCodigoDeportista.Text;
-
-            Conexion.Open();
-            ComandoBD.Connection = Conexion;
-
-            using (System.Data.OleDb.OleDbCommand commandUpdate = new System.Data.OleDb.OleDbCommand(
-                    "UPDATE ENTRENADORES SET NOMBRE=@NOMBRE, APELLIDO=@APELLIDO, DIRECCION=@DIRECCION," +
-                    "PROVINCIA=@PROVINCIA,DEPORTE=@DEPORTE WHERE [CODIGO ENTRENADORES]=@Codigo", Conexion)) //creo comando, sentencia sql
+            if (txtCodigoDeportista.Text != "")
             {
-                commandUpdate.Parameters.Add(new System.Data.OleDb.OleDbParameter("@NOMBRE", nombre));
-                commandUpdate.Parameters.Add(new System.Data.OleDb.OleDbParameter("@APELLIDO", apellido));
-                commandUpdate.Parameters.Add(new System.Data.OleDb.OleDbParameter("@DIRECCION", direccion));
-                commandUpdate.Parameters.Add(new System.Data.OleDb.OleDbParameter("@PROVINCIA", provincia));
-                commandUpdate.Parameters.Add(new System.Data.OleDb.OleDbParameter("@DEPORTE", deporte));
-                commandUpdate.Parameters.Add(new System.Data.OleDb.OleDbParameter("@Codigo", codigodeportista));
-                commandUpdate.ExecuteNonQuery();
+                string nombre = txtNombre.Text;
+                string apellido = txtApellido.Text;
+                string direccion = txtDireccion.Text;
+                string provincia = txtProvincia.Text;
+                string deporte = cboDeporte.Text;
+                string codigodeportista = txtCodigoDeportista.Text;
+
+                Conexion.Open();
+                ComandoBD.Connection = Conexion;
+
+                using (System.Data.OleDb.OleDbCommand commandUpdate = new System.Data.OleDb.OleDbCommand(
+                        "UPDATE ENTRENADORES SET NOMBRE=@NOMBRE, APELLIDO=@APELLIDO, DIRECCION=@DIRECCION," +
+                        "PROVINCIA=@PROVINCIA,DEPORTE=@DEPORTE WHERE [CODIGO ENTRENADORES]=@Codigo", Conexion)) //creo comando, sentencia sql
+                {
+                    commandUpdate.Parameters.Add(new System.Data.OleDb.OleDbParameter("@NOMBRE", nombre));
+                    commandUpdate.Parameters.Add(new System.Data.OleDb.OleDbParameter("@APELLIDO", apellido));
+                    commandUpdate.Parameters.Add(new System.Data.OleDb.OleDbParameter("@DIRECCION", direccion));
+                    commandUpdate.Parameters.Add(new System.Data.OleDb.OleDbParameter("@PROVINCIA", provincia));
+                    commandUpdate.Parameters.Add(new System.Data.OleDb.OleDbParameter("@DEPORTE", deporte));
+                    commandUpdate.Parameters.Add(new System.Data.OleDb.OleDbParameter("@Codigo", codigodeportista));
+                    commandUpdate.ExecuteNonQuery();
+                }
+                MessageBox.Show("Actualizado con exito!!");
+                Conexion.Close();
             }
-            MessageBox.Show("Actualizado con exito!!");
-            Conexion.Close();
+            else
+            {
+                MessageBox.Show("Ingrese un codigo valido");
+            }
         }
     }
 }

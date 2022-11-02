@@ -45,3 +45,5 @@ C:\Users\Roma\Source\Repos\pryRomanisio-BaseDeDatos\pryRomanisio-BaseDeDatos\obj
 C:\Users\Roma\Source\Repos\pryRomanisio-BaseDeDatos\pryRomanisio-BaseDeDatos\obj\Debug\pryRomanisio-BaseDeDatos.pdb
 C:\Users\Roma\source\repos\pryRomanisio-BaseDeDatos\pryRomanisio-BaseDeDatos\obj\Debug\pryRomanisio_BaseDeDatos.frmActualizarDeportista.resources
 C:\Users\Roma\source\repos\pryRomanisio-BaseDeDatos\pryRomanisio-BaseDeDatos\obj\Debug\pryRomanisio_BaseDeDatos.frmActualizarEntrenadores.resources
+C:\Users\Roma\source\repos\pryRomanisio-BaseDeDatos\pryRomanisio-BaseDeDatos\obj\Debug\pryRomanisio_BaseDeDatos.frmBorrarDeportistas.resources
+C:\Users\Roma\source\repos\pryRomanisio-BaseDeDatos\pryRomanisio-BaseDeDatos\obj\Debug\pryRomanisio_BaseDeDatos.frmBorrarEntrenadores.resources

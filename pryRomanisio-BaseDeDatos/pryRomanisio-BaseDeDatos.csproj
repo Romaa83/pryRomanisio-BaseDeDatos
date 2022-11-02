@@ -59,6 +59,18 @@
     <Compile Include="frmActualizarEntrenadores.Designer.cs">
       <DependentUpon>frmActualizarEntrenadores.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBorrarDeportistas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBorrarDeportistas.Designer.cs">
+      <DependentUpon>frmBorrarDeportistas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBorrarEntrenadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBorrarEntrenadores.Designer.cs">
+      <DependentUpon>frmBorrarEntrenadores.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConsultaDeportistas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +108,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmActualizarEntrenadores.resx">
       <DependentUpon>frmActualizarEntrenadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBorrarDeportistas.resx">
+      <DependentUpon>frmBorrarDeportistas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBorrarEntrenadores.resx">
+      <DependentUpon>frmBorrarEntrenadores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaDeportistas.resx">
       <DependentUpon>frmConsultaDeportistas.cs</DependentUpon>
